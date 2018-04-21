@@ -1,36 +1,43 @@
-\documentclass[a4paper]{article}
-
+\documentclass[a4paper,10pt]{article}
 \usepackage[english]{babel}
 \usepackage[utf8]{inputenc}
-\usepackage{amsmath}
-\usepackage{graphicx}
-\usepackage[colorinlistoftodos]{todonotes}
-\usepackage{ mathrsfs }
-\usepackage[
-backend=biber,
-style=alphabetic,
-sorting=ynt
-]{biblatex}
-\addbibresource{bibliography.bib}
+\usepackage{url}
 
-\title{Proiect asistent bucătărie}
+\usepackage[nottoc]{tocbibind}
+
+
+\title{Descriere licență}
+\author{Puiu Danut-Petru, 3B7}
 \date{}
 
-
+%Begining of the document
 \begin{document}
+
 \maketitle
+
+\medskip
 
 \large
 \textbf{Context}\\
 \normalsize
 
-Timpul pe care îl alocăm gătitului în viața de zi cu zi este tot mai scrut, iar asta se poate observa în statisticile cu privire la consumul mâncărurilor de tip fast-food.\cite{1}
-\\
+Timpul pe care îl alocăm gătitului în viața de zi cu zi este tot mai scrut, iar asta se poate observa în statisticile cu privire la consumul mâncărurilor de tip fast-food.\cite{link1} Percepția multora este că mâncarea gătită și cea mai sănătoasă este mult mai costisitoare ca timp și ca bani decât mâncarea fast-food, care este, în general, mult mai nocivă asupra sănătății.\cite{link2} Din această cauză, devine tot mai necesară crearea unei unelte ce facilitează găsirea unei rețete, adunarea celor mai bune și eficiente ingrediente din punct de vedere al costului și gătirea cât mai rapidă a unor mâncăruri sănătoase. Această unealtă nu trebuie doar să ofere o mulțime de rețete, ci, mai important este să ia în considerare prețul relativ al fiecăreia deoarece ar oferi o privire de ansamblu mai completă pentru utilizator, ce i-ar da  un criteriu care sa-l ajute să facă alegerea optimală.\\
 
 \large
 \textbf{Motivație}\\
 \normalsize
 
-\printbibliography
+Această lucrare urmărește construirea unei aplicații ce are ca scop oferirea unui mediu intuitiv și util utilizatorilor ce vor să gătească, dar se gândesc în prealabil doar la unele dintre caracteristicile unei rețete, de exemplu la unele dintre ingredientele pe care vor să le folosească, la timpul maxim de gătit, la numărul maxim de calorii al mâncării sau chiar la prețul relativ la produsele de care are nevoie rețeta.\\
+
+\medskip
+
+%Sets the bibliography style to ieeetr and imports the 
+%bibliography file "bibi.bib".
+\renewcommand{\bibsection}{\subsection*{Bibiliografie}}
+\bibliographystyle{ieeetr}
+\inputencoding{latin2}
+\bibliography{bibi}
+\inputencoding{utf8}
+
 
 \end{document}
